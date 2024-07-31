@@ -2,7 +2,7 @@ from flask import Flask, send_from_directory
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/mailservice', methods=['GET'])
 def mainservice():
     return send_from_directory('static', 'index.html')
 
